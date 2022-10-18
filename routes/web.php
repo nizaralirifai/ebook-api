@@ -21,3 +21,27 @@ Route::get('coba',function(){
     return "kamu jomblo yaa";
 
 });
+
+Route::get('coba', function(){
+    return['petra','mus', 'strarry'];
+});
+
+Route::get('coba2', function(){
+    return[
+        'nama' => 'Nizar Ali',
+        'kelas' => 'XII RPL 5',
+        'nis' => 3103120166
+    ];
+});
+
+Route::get('coba3', function(){
+    return response()->json(
+        [
+        'nama' => 'Nizar Ali',
+        'kelas' => 'XII RPL 5',
+        'nis' => 3103120166
+        ],201
+    );
+});
+
+
